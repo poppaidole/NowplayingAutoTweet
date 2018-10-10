@@ -3,7 +3,7 @@ package main
 import (
   "fmt"
   "github.com/ChimeraCoder/anaconda"
-  //"net/http"
+ 
   "os/exec"
   "time"
 )
@@ -21,7 +21,7 @@ func check(st string)string{
   return st
 }
 //supervisor
-func GetTwitterAi() *anaconda.TwitterApi {//この関数で自前のアカウントでツイッターにアクセスする
+func GetTwitterAi() *anaconda.TwitterApi {
   anaconda.SetConsumerKey("")
   anaconda.SetConsumerSecret("")
   api := anaconda.NewTwitterApi("", "")
